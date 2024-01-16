@@ -19,7 +19,7 @@ logging:
   level:
     sql: debug
 management:
-  metrics:
-    binders:
-      cache:
-        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, env, etc..

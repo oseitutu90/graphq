@@ -44,5 +44,5 @@ public class AuthorController {
     public List<Book> books(Author author) {
         return bookService.findByAuthor(author);
     }
-    record BookInput(String title, String publisher, Long authorId){}
+    public record BookInput(String title, String publisher, Long authorId){}
 }
